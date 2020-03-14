@@ -1,6 +1,6 @@
 {
     "checks": "if-statements",
-    "project_name": "flake8-lint-{{ cookiecutter.checks }}",
+    "project_name": "flake8-{{ cookiecutter.checks }}",
     "description": "Flake8 Linter for {{ cookiecutter.checks.replace('-', ' ').title()  }}",
     "project_slug": "{{ cookiecutter.project_name.replace('-', '_') }}",
     "full_name": "John Doe",
