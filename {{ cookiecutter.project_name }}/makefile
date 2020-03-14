@@ -14,12 +14,12 @@ lint:
 	poetry run flake8 --jobs 4 --statistics --show-source $(CODE) tests
 	poetry run pylint --jobs 4 --rcfile=setup.cfg $(CODE)
 	poetry run mypy $(CODE) tests
-	poetry run black ---target-version py36 --skip-string-normalization --line-length=79 --check $(CODE) tests
+	poetry run black --skip-string-normalization --check $(CODE) tests
 	poetry run pytest --dead-fixtures --dup-fixtures
 
 pretty:
 	poetry run isort --apply --recursive $(CODE) tests
-	poetry run black --target-version py36 --skip-string-normalization --line-length=79 $(CODE) tests
+	poetry run black --skip-string-normalization $(CODE) tests
 	poetry run unify --in-place --recursive $(CODE) tests
 
 precommit_install:
