@@ -1,0 +1,13 @@
+{
+  "_template": ".",
+  "description": "lints example stuff",
+  "email": "d1618033@gmail.com",
+  "error_message": "example message",
+  "error_name": "Example",
+  "error_prefix": "EX",
+  "full_name": "David S",
+  "github_username": "d1618033",
+  "plugin_name": "Example",
+  "project_name": "flake8-lint-example",
+  "project_slug": "flake8_lint_example"
+}

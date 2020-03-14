@@ -1,0 +1,14 @@
+{
+    "checks": "if-statements",
+    "project_name": "flake8-lint-{{ cookiecutter.checks }}",
+    "description": "Flake8 Linter for {{ cookiecutter.checks.replace('-', ' ').title()  }}",
+    "project_slug": "{{ cookiecutter.project_name.replace('-', '_') }}",
+    "full_name": "John Doe",
+    "email": "john.doe@gmail.com",
+    "github_username": "johndoe",
+    "plugin_name": "{{ cookiecutter.checks.replace('-', ' ').title().replace(' ', '') }}",
+    "error_name": "{{ cookiecutter.plugin_name }}",
+    "error_prefix": "{{ cookiecutter.checks.replace('-', ' ').upper().replace(' ', '') }}",
+    "error_message": "should be x",
+    "_extensions": ["jinja2_time.TimeExtension"]
+}
