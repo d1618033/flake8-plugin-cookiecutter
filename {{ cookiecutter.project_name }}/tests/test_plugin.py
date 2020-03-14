@@ -10,7 +10,7 @@ def test_actual_code(tmpdir):
                 """
 
                 """
-            )
+            ).lstrip()
         )
     output = (
         subprocess.run(
